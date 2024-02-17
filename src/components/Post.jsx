@@ -10,7 +10,8 @@ import {
   IconButton,
   Typography,
 } from "@mui/material";
-const Post = () => {
+
+const Post = ({ image }) => { // Accept image prop
   return (
     <Card sx={{ margin: 5 }}>
       <CardHeader
@@ -30,8 +31,7 @@ const Post = () => {
       <CardMedia
         component="img"
         height="20%"
-        image="https://images.pexels.com/photos/7625777/pexels-photo-7625777.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
-        
+        image={image} // Use the image prop here
         alt="Paella dish"
       />
       <CardContent>
